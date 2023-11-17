@@ -11,16 +11,15 @@ public class Addition {
         int choice = sc.nextInt();
         double num3;
         if(choice==1){
-            num3=num1+num2;
+            num3=num1 + num2;
             System.out.println("Addition of two numbers is: " + num3);
         }
-        else if(choice==2){
-            num3=num1-num2;
-            System.out.println("Subtraction of two numbers is: " + num3);
+        else if(choice==2) {
+            num3 = num1 - num2;
+            System.out.println("Addition of two numbers is: " + num3);
         }
         else {
             System.out.println("Invalid Input");
         }
     }
-
 }
