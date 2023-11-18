@@ -1,7 +1,18 @@
 import java.util.Scanner;
-public class Addition {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+public class Addition{
+        public static void addition(){
+            System.out.println("static");
+        }
+        public void addition1(){
+            System.out.println("object");
+        }
+        public static void main(String[] args) {
+            System.out.println("Welcome to the Calculator");
+            Addition a1 = new Addition();
+            a1.addition1();
+            addition();
+        }}
+      /*  Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to the Calculator");
         System.out.println("Enter the First Number");
         double num1 = sc.nextDouble();
@@ -9,8 +20,8 @@ public class Addition {
         double num2 = sc.nextDouble();
         System.out.println("enter your choice\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division");
         int choice = sc.nextInt();
-        double num3;
-        switch (choice){
+        double num3;*/
+       /* switch (choice){
             case 1:
                 num3 = num1 + num2;
                 System.out.println("Addition of Your Input is: " +num3);
@@ -29,7 +40,7 @@ public class Addition {
                 break;
             default:
                 System.out.println("Invalid Input");
-        }
+        }*/
        /* if(choice==1){
             num3=num1 + num2;
             System.out.println("Addition of two numbers is: " + num3);
@@ -41,5 +52,3 @@ public class Addition {
         else {
             System.out.println("Invalid Input");
         }*/
-    }
-}
